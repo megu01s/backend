@@ -1,0 +1,447 @@
+[[1;34mINFO[m] Scanning for projects...
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m-----------------------< [0;36mcom.example:imageproc[0;1m >------------------------[m
+[[1;34mINFO[m] [1mBuilding imageproc 0.0.1-SNAPSHOT[m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:3.3.1:resources[m [1m(default-resources)[m @ [36mimageproc[0;1m ---[m
+[[1;34mINFO[m] Copying 1 resource from src/main/resources to target/classes
+[[1;34mINFO[m] Copying 0 resource from src/main/resources to target/classes
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.11.0:compile[m [1m(default-compile)[m @ [36mimageproc[0;1m ---[m
+[[1;34mINFO[m] Nothing to compile - all classes are up to date
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:3.3.1:testResources[m [1m(default-testResources)[m @ [36mimageproc[0;1m ---[m
+[[1;34mINFO[m] Copying 3 resources from src/test/resources to target/test-classes
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.11.0:testCompile[m [1m(default-testCompile)[m @ [36mimageproc[0;1m ---[m
+[[1;34mINFO[m] Nothing to compile - all classes are up to date
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-surefire-plugin:3.1.2:test[m [1m(default-test)[m @ [36mimageproc[0;1m ---[m
+[[1;34mINFO[m] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
+[[1;34mINFO[m] 
+[[1;34mINFO[m] -------------------------------------------------------
+[[1;34mINFO[m]  T E S T S
+[[1;34mINFO[m] -------------------------------------------------------
+[[1;34mINFO[m] Running com.example.imageproc.[1mImageprocApplicationTests[m
+15:34:35.926 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.example.imageproc.ImageprocApplicationTests]: ImageprocApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+15:34:36.034 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.example.imageproc.ImageProcApplication for test class com.example.imageproc.ImageprocApplicationTests
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.3)
+
+2026-02-19T15:34:36.367+01:00  INFO 700263 --- [imageproc] [           main] c.e.imageproc.ImageprocApplicationTests  : Starting ImageprocApplicationTests using Java 21.0.10 with PID 700263 (started by lhuihong in /home/lhuihong/projects/imageproc/backend)
+2026-02-19T15:34:36.369+01:00  INFO 700263 --- [imageproc] [           main] c.e.imageproc.ImageprocApplicationTests  : No active profile set, falling back to 1 default profile: "default"
+2026-02-19T15:34:37.610+01:00  INFO 700263 --- [imageproc] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-19T15:34:37.694+01:00  INFO 700263 --- [imageproc] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 76 ms. Found 2 JPA repository interfaces.
+2026-02-19T15:34:38.606+01:00  INFO 700263 --- [imageproc] [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-19T15:34:38.688+01:00  INFO 700263 --- [imageproc] [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2026-02-19T15:34:38.744+01:00  INFO 700263 --- [imageproc] [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-02-19T15:34:39.078+01:00  INFO 700263 --- [imageproc] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-19T15:34:39.130+01:00  INFO 700263 --- [imageproc] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-02-19T15:34:39.367+01:00  INFO 700263 --- [imageproc] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2026-02-19T15:34:39.369+01:00  INFO 700263 --- [imageproc] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-02-19T15:34:39.396+01:00  WARN 700263 --- [imageproc] [           main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-02-19T15:34:40.397+01:00  INFO 700263 --- [imageproc] [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+Hibernate: drop table if exists image_entity cascade 
+Hibernate: drop table if exists users cascade 
+Hibernate: create table image_entity (id bigint generated by default as identity, uploaded_at timestamp(6), user_id bigint, file_name varchar(255), file_path varchar(255), file_type varchar(255), primary key (id))
+Hibernate: create table users (id bigint generated by default as identity, email varchar(255), password varchar(255) not null, username varchar(255) not null unique, primary key (id))
+Hibernate: alter table if exists image_entity add constraint FKgobx8wycoo2ncaoo00atqru4x foreign key (user_id) references users
+2026-02-19T15:34:40.454+01:00  INFO 700263 --- [imageproc] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-19T15:34:41.237+01:00  WARN 700263 --- [imageproc] [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-19T15:34:41.749+01:00  INFO 700263 --- [imageproc] [           main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@376c5950, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@11ec699, org.springframework.security.web.context.SecurityContextHolderFilter@570089c4, org.springframework.security.web.header.HeaderWriterFilter@40e90634, org.springframework.web.filter.CorsFilter@7d2ddbf3, org.springframework.security.web.authentication.logout.LogoutFilter@2b3ee95e, com.example.imageproc.security.jwt.JwtAuthenticationFilter@62ff3028, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2ab1c7a9, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6e818345, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4eee730c, org.springframework.security.web.session.SessionManagementFilter@689fe2a3, org.springframework.security.web.access.ExceptionTranslationFilter@7acbd3d0, org.springframework.security.web.access.intercept.AuthorizationFilter@6eeb15f9]
+2026-02-19T15:34:42.328+01:00  INFO 700263 --- [imageproc] [           main] c.e.imageproc.ImageprocApplicationTests  : Started ImageprocApplicationTests in 6.174 seconds (process running for 7.21)
+2026-02-19T15:34:42.334+01:00  INFO 700263 --- [imageproc] [           main] c.e.imageproc.ImageProcApplication       : Upload directory ready at: /home/lhuihong/projects/imageproc/uploads
+OpenJDK 64-Bit Server VM warning: Sharing is only supported for boot loader classes because bootstrap classpath has been appended
+WARNING: A Java agent has been loaded dynamically (/home/lhuihong/.m2/repository/net/bytebuddy/byte-buddy-agent/1.14.12/byte-buddy-agent-1.14.12.jar)
+WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+WARNING: Dynamic loading of agents will be disallowed by default in a future release
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m1[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.382 s -- in com.example.imageproc.[1mImageprocApplicationTests[m
+[[1;34mINFO[m] Running com.example.imageproc.[1mTestRunner[m
+2026-02-19T15:34:43.347+01:00  INFO 700263 --- [imageproc] [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.example.imageproc.config.CucumberSpringConfig]: CucumberSpringConfig does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-02-19T15:34:43.359+01:00  INFO 700263 --- [imageproc] [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.example.imageproc.ImageProcApplication for test class com.example.imageproc.config.CucumberSpringConfig
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.3)
+
+2026-02-19T15:34:43.409+01:00  INFO 700263 --- [imageproc] [           main] c.e.i.config.CucumberSpringConfig        : Starting CucumberSpringConfig using Java 21.0.10 with PID 700263 (started by lhuihong in /home/lhuihong/projects/imageproc/backend)
+2026-02-19T15:34:43.410+01:00  INFO 700263 --- [imageproc] [           main] c.e.i.config.CucumberSpringConfig        : No active profile set, falling back to 1 default profile: "default"
+2026-02-19T15:34:43.895+01:00  INFO 700263 --- [imageproc] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-19T15:34:43.940+01:00  INFO 700263 --- [imageproc] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 43 ms. Found 2 JPA repository interfaces.
+2026-02-19T15:34:44.414+01:00  INFO 700263 --- [imageproc] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-02-19T15:34:44.441+01:00  INFO 700263 --- [imageproc] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-02-19T15:34:44.442+01:00  INFO 700263 --- [imageproc] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2026-02-19T15:34:44.529+01:00  INFO 700263 --- [imageproc] [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-02-19T15:34:44.530+01:00  INFO 700263 --- [imageproc] [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1118 ms
+2026-02-19T15:34:44.618+01:00  INFO 700263 --- [imageproc] [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-19T15:34:44.620+01:00  INFO 700263 --- [imageproc] [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-02-19T15:34:44.628+01:00  INFO 700263 --- [imageproc] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-19T15:34:44.630+01:00  INFO 700263 --- [imageproc] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2026-02-19T15:34:44.633+01:00  INFO 700263 --- [imageproc] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection conn10: url=jdbc:h2:mem:testdb user=SA
+2026-02-19T15:34:44.633+01:00  INFO 700263 --- [imageproc] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2026-02-19T15:34:44.635+01:00  WARN 700263 --- [imageproc] [           main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-02-19T15:34:44.763+01:00  INFO 700263 --- [imageproc] [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+Hibernate: drop table if exists image_entity cascade 
+Hibernate: drop table if exists users cascade 
+Hibernate: create table image_entity (id bigint generated by default as identity, uploaded_at timestamp(6), user_id bigint, file_name varchar(255), file_path varchar(255), file_type varchar(255), primary key (id))
+Hibernate: create table users (id bigint generated by default as identity, email varchar(255), password varchar(255) not null, username varchar(255) not null unique, primary key (id))
+Hibernate: alter table if exists image_entity add constraint FKgobx8wycoo2ncaoo00atqru4x foreign key (user_id) references users
+2026-02-19T15:34:44.778+01:00  INFO 700263 --- [imageproc] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-19T15:34:44.950+01:00  WARN 700263 --- [imageproc] [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-19T15:34:45.055+01:00  INFO 700263 --- [imageproc] [           main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@a263df9, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@71d4b83b, org.springframework.security.web.context.SecurityContextHolderFilter@6a8b94b2, org.springframework.security.web.header.HeaderWriterFilter@3c2654e, org.springframework.web.filter.CorsFilter@33d828b3, org.springframework.security.web.authentication.logout.LogoutFilter@5125558b, com.example.imageproc.security.jwt.JwtAuthenticationFilter@521d455c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@69a61267, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@795ef208, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7c7478ac, org.springframework.security.web.session.SessionManagementFilter@1361b39a, org.springframework.security.web.access.ExceptionTranslationFilter@1ac32da1, org.springframework.security.web.access.intercept.AuthorizationFilter@6092d41]
+2026-02-19T15:34:45.221+01:00  INFO 700263 --- [imageproc] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2026-02-19T15:34:45.225+01:00  INFO 700263 --- [imageproc] [           main] c.e.i.config.CucumberSpringConfig        : Started CucumberSpringConfig in 1.863 seconds (process running for 10.107)
+2026-02-19T15:34:45.226+01:00  INFO 700263 --- [imageproc] [           main] c.e.imageproc.ImageProcApplication       : Upload directory ready at: /home/lhuihong/projects/imageproc/uploads
+2026-02-19T15:34:46.413+01:00  INFO 700263 --- [imageproc] [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-02-19T15:34:46.414+01:00  INFO 700263 --- [imageproc] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-02-19T15:34:46.417+01:00  INFO 700263 --- [imageproc] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+Hibernate: select ue1_0.id from users ue1_0 where ue1_0.username=? fetch first ? rows only
+Hibernate: insert into users (email,password,username,id) values (?,?,?,default)
+2026-02-19T15:34:46.906+01:00  INFO 700263 --- [imageproc] [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.example.imageproc.config.CucumberSpringConfig]: CucumberSpringConfig does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-02-19T15:34:46.908+01:00  INFO 700263 --- [imageproc] [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.example.imageproc.ImageProcApplication for test class com.example.imageproc.config.CucumberSpringConfig
+Hibernate: select ue1_0.id from users ue1_0 where ue1_0.username=? fetch first ? rows only
+Hibernate: insert into users (email,password,username,id) values (?,?,?,default)
+2026-02-19T15:34:47.033+01:00  INFO 700263 --- [imageproc] [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.example.imageproc.config.CucumberSpringConfig]: CucumberSpringConfig does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-02-19T15:34:47.034+01:00  INFO 700263 --- [imageproc] [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.example.imageproc.ImageProcApplication for test class com.example.imageproc.config.CucumberSpringConfig
+Hibernate: select ue1_0.id from users ue1_0 where ue1_0.username=? fetch first ? rows only
+Hibernate: insert into users (email,password,username,id) values (?,?,?,default)
+2026-02-19T15:34:47.148+01:00  INFO 700263 --- [imageproc] [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.example.imageproc.config.CucumberSpringConfig]: CucumberSpringConfig does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-02-19T15:34:47.150+01:00  INFO 700263 --- [imageproc] [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.example.imageproc.ImageProcApplication for test class com.example.imageproc.config.CucumberSpringConfig
+Hibernate: select ue1_0.id,ue1_0.email,ue1_0.password,ue1_0.username from users ue1_0 where ue1_0.username=?
+2026-02-19T15:34:47.428+01:00  INFO 700263 --- [imageproc] [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.example.imageproc.config.CucumberSpringConfig]: CucumberSpringConfig does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-02-19T15:34:47.429+01:00  INFO 700263 --- [imageproc] [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.example.imageproc.ImageProcApplication for test class com.example.imageproc.config.CucumberSpringConfig
+Hibernate: select ue1_0.id,ue1_0.email,ue1_0.password,ue1_0.username from users ue1_0 where ue1_0.username=?
+2026-02-19T15:34:47.540+01:00  INFO 700263 --- [imageproc] [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.example.imageproc.config.CucumberSpringConfig]: CucumberSpringConfig does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-02-19T15:34:47.540+01:00  INFO 700263 --- [imageproc] [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.example.imageproc.ImageProcApplication for test class com.example.imageproc.config.CucumberSpringConfig
+Hibernate: select ue1_0.id,ue1_0.email,ue1_0.password,ue1_0.username from users ue1_0 where ue1_0.username=?
+2026-02-19T15:34:47.643+01:00  INFO 700263 --- [imageproc] [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.example.imageproc.config.CucumberSpringConfig]: CucumberSpringConfig does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-02-19T15:34:47.645+01:00  INFO 700263 --- [imageproc] [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.example.imageproc.ImageProcApplication for test class com.example.imageproc.config.CucumberSpringConfig
+2026-02-19T15:34:47.678+01:00  INFO 700263 --- [imageproc] [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.example.imageproc.config.CucumberSpringConfig]: CucumberSpringConfig does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-02-19T15:34:47.680+01:00  INFO 700263 --- [imageproc] [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.example.imageproc.ImageProcApplication for test class com.example.imageproc.config.CucumberSpringConfig
+2026-02-19T15:34:47.734+01:00  INFO 700263 --- [imageproc] [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.example.imageproc.config.CucumberSpringConfig]: CucumberSpringConfig does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-02-19T15:34:47.735+01:00  INFO 700263 --- [imageproc] [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.example.imageproc.ImageProcApplication for test class com.example.imageproc.config.CucumberSpringConfig
+Cucumber is running successfully!
+[[1;31mERROR[m] [1;31mTests [0;1mrun: [0;1m9[m, [1;31mFailures: [0;1;31m6[m, [1;31mErrors: [0;1;31m2[m, Skipped: 0, Time elapsed: 4.598 s[1;31m <<< FAILURE![m -- in com.example.imageproc.[1mTestRunner[m
+[[1;31mERROR[m] User Authentication.Successfully sign up a new user -- Time elapsed: 3.589 s <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <201> but was <200>.
+
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:57)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:139)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
+	at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:49)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:135)
+	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:49)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
+	at com.example.imageproc.steps.AuthenticationSteps.theResponseStatusShouldBe(AuthenticationSteps.java:35)
+	at ✽.the response status should be 201(classpath:features/authentication.feature:12)
+
+[[1;31mERROR[m] User Authentication.Reject sign-up with an existing username -- Time elapsed: 0.126 s <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <409> but was <200>.
+
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
+	at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:135)
+	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
+	at com.example.imageproc.steps.AuthenticationSteps.theResponseStatusShouldBe(AuthenticationSteps.java:35)
+	at ✽.the response status should be 409(classpath:features/authentication.feature:18)
+
+[[1;31mERROR[m] User Authentication.Reject sign-up with invalid password format -- Time elapsed: 0.115 s <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <400> but was <200>.
+
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
+	at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:135)
+	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
+	at com.example.imageproc.steps.AuthenticationSteps.theResponseStatusShouldBe(AuthenticationSteps.java:35)
+	at ✽.the response status should be 400(classpath:features/authentication.feature:24)
+
+[[1;31mERROR[m] User Authentication.Successfully log in and receive JWT token -- Time elapsed: 0.279 s <<< ERROR!
+io.restassured.path.json.exception.JsonPathException: Failed to parse the JSON document
+	at io.restassured.path.json.JsonPath$ExceptionCatcher.invoke(JsonPath.java:1002)
+	at io.restassured.path.json.JsonPath$4.doParseWith(JsonPath.java:967)
+	at io.restassured.path.json.JsonPath$JsonParser.parseWith(JsonPath.java:1047)
+	at io.restassured.path.json.JsonPath.get(JsonPath.java:202)
+	at io.restassured.path.json.JsonPath.getString(JsonPath.java:352)
+	at com.example.imageproc.steps.AuthenticationSteps.responseShouldContainJwtToken(AuthenticationSteps.java:66)
+	at ✽.the response should contain a JWT token(classpath:features/authentication.feature:34)
+Caused by: groovy.json.JsonException: Lexing failed on line: 1, column: 1, while reading 'e', no possible valid JSON value or punctuation could be recognized.
+	at groovy.json.JsonLexer.nextToken(JsonLexer.java:86)
+	at groovy.json.JsonLexer$nextToken.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:130)
+	at io.restassured.internal.path.json.ConfigurableJsonSlurper.parse(ConfigurableJsonSlurper.groovy:97)
+	at io.restassured.internal.path.json.ConfigurableJsonSlurper$parse.callCurrent(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:49)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.path.json.ConfigurableJsonSlurper.parseText(ConfigurableJsonSlurper.groovy:83)
+	at io.restassured.path.json.JsonPath$4$1.method(JsonPath.java:965)
+	at io.restassured.path.json.JsonPath$ExceptionCatcher.invoke(JsonPath.java:1000)
+	at io.restassured.path.json.JsonPath$4.doParseWith(JsonPath.java:967)
+	at io.restassured.path.json.JsonPath$JsonParser.parseWith(JsonPath.java:1047)
+	at io.restassured.path.json.JsonPath.get(JsonPath.java:202)
+	at io.restassured.path.json.JsonPath.getString(JsonPath.java:352)
+	at com.example.imageproc.steps.AuthenticationSteps.responseShouldContainJwtToken(AuthenticationSteps.java:66)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:84)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:56)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:84)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+	at io.cucumber.junit.platform.engine.CucumberEngineExecutionContext.lambda$runTestCase$4(CucumberEngineExecutionContext.java:112)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
+	at io.cucumber.junit.platform.engine.CucumberEngineExecutionContext.runTestCase(CucumberEngineExecutionContext.java:109)
+	at io.cucumber.junit.platform.engine.NodeDescriptor$PickleDescriptor.execute(NodeDescriptor.java:168)
+	at io.cucumber.junit.platform.engine.NodeDescriptor$PickleDescriptor.execute(NodeDescriptor.java:90)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+[[1;31mERROR[m] User Authentication.Reject login with invalid credentials -- Time elapsed: 0.112 s <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <401> but was <403>.
+
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
+	at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:135)
+	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
+	at com.example.imageproc.steps.AuthenticationSteps.theResponseStatusShouldBe(AuthenticationSteps.java:35)
+	at ✽.the response status should be 401(classpath:features/authentication.feature:39)
+
+[[1;31mERROR[m] User Authentication.Access a protected endpoint with a valid JWT token -- Time elapsed: 0.102 s <<< ERROR!
+io.restassured.path.json.exception.JsonPathException: Failed to parse the JSON document
+	at io.restassured.path.json.JsonPath$ExceptionCatcher.invoke(JsonPath.java:1002)
+	at io.restassured.path.json.JsonPath$4.doParseWith(JsonPath.java:967)
+	at io.restassured.path.json.JsonPath$JsonParser.parseWith(JsonPath.java:1047)
+	at io.restassured.path.json.JsonPath.get(JsonPath.java:202)
+	at io.restassured.path.json.JsonPath.getString(JsonPath.java:352)
+	at com.example.imageproc.steps.AuthenticationSteps.iHaveAValidJwtToken(AuthenticationSteps.java:78)
+	at ✽.I have a valid JWT token for username "existingUser"(classpath:features/authentication.feature:46)
+Caused by: groovy.json.JsonException: Lexing failed on line: 1, column: 1, while reading 'e', no possible valid JSON value or punctuation could be recognized.
+	at groovy.json.JsonLexer.nextToken(JsonLexer.java:86)
+	at groovy.json.JsonLexer$nextToken.call(Unknown Source)
+	at io.restassured.internal.path.json.ConfigurableJsonSlurper.parse(ConfigurableJsonSlurper.groovy:97)
+	at io.restassured.internal.path.json.ConfigurableJsonSlurper$parse.callCurrent(Unknown Source)
+	at io.restassured.internal.path.json.ConfigurableJsonSlurper.parseText(ConfigurableJsonSlurper.groovy:83)
+	at io.restassured.path.json.JsonPath$4$1.method(JsonPath.java:965)
+	at io.restassured.path.json.JsonPath$ExceptionCatcher.invoke(JsonPath.java:1000)
+	at io.restassured.path.json.JsonPath$4.doParseWith(JsonPath.java:967)
+	at io.restassured.path.json.JsonPath$JsonParser.parseWith(JsonPath.java:1047)
+	at io.restassured.path.json.JsonPath.get(JsonPath.java:202)
+	at io.restassured.path.json.JsonPath.getString(JsonPath.java:352)
+	at com.example.imageproc.steps.AuthenticationSteps.iHaveAValidJwtToken(AuthenticationSteps.java:78)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:84)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:56)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:84)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+	at io.cucumber.junit.platform.engine.CucumberEngineExecutionContext.lambda$runTestCase$4(CucumberEngineExecutionContext.java:112)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
+	at io.cucumber.junit.platform.engine.CucumberEngineExecutionContext.runTestCase(CucumberEngineExecutionContext.java:109)
+	at io.cucumber.junit.platform.engine.NodeDescriptor$PickleDescriptor.execute(NodeDescriptor.java:168)
+	at io.cucumber.junit.platform.engine.NodeDescriptor$PickleDescriptor.execute(NodeDescriptor.java:90)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+[[1;31mERROR[m] User Authentication.Reject access to a protected endpoint without token -- Time elapsed: 0.034 s <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <401> but was <403>.
+
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
+	at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:135)
+	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
+	at com.example.imageproc.steps.AuthenticationSteps.theResponseStatusShouldBe(AuthenticationSteps.java:35)
+	at ✽.the response status should be 401(classpath:features/authentication.feature:53)
+
+[[1;31mERROR[m] User Authentication.Reject access to a protected endpoint with an invalid JWT token -- Time elapsed: 0.054 s <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Response body doesn't match expectation.
+Expected: (map containing ["error"->ANYTHING] or map containing ["message"->ANYTHING] or map containing ["timestamp"->ANYTHING])
+  Actual: 
+
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
+	at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:49)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:107)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.body(ValidatableResponseOptionsImpl.java:238)
+	at com.example.imageproc.steps.AuthenticationSteps.responseShouldContainAuthError(AuthenticationSteps.java:111)
+	at ✽.the response should contain an authentication error(classpath:features/authentication.feature:60)
+
+[[1;34mINFO[m] 
+[[1;34mINFO[m] Results:
+[[1;34mINFO[m] 
+[[1;31mERROR[m] [1;31mFailures: [m
+[[1;31mERROR[m] [1;31m  1 expectation failed.
+Response body doesn't match expectation.
+Expected: (map containing ["error"->ANYTHING] or map containing ["message"->ANYTHING] or map containing ["timestamp"->ANYTHING])
+  Actual: 
+[m
+[[1;31mERROR[m] [1;31m  1 expectation failed.
+Expected status code <401> but was <403>.
+[m
+[[1;31mERROR[m] [1;31m  1 expectation failed.
+Expected status code <401> but was <403>.
+[m
+[[1;31mERROR[m] [1;31m  1 expectation failed.
+Expected status code <409> but was <200>.
+[m
+[[1;31mERROR[m] [1;31m  1 expectation failed.
+Expected status code <400> but was <200>.
+[m
+[[1;31mERROR[m] [1;31m  1 expectation failed.
+Expected status code <201> but was <200>.
+[m
+[[1;31mERROR[m] [1;31mErrors: [m
+[[1;31mERROR[m] [1;31m  Failed to parse the JSON document[m
+[[1;31mERROR[m] [1;31m  Failed to parse the JSON document[m
+[[1;34mINFO[m] 
+[[1;31mERROR[m] [1;31mTests run: 10, Failures: 6, Errors: 2, Skipped: 0[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1;31mBUILD FAILURE[m
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] Total time:  13.967 s
+[[1;34mINFO[m] Finished at: 2026-02-19T15:34:47+01:00
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;31mERROR[m] Failed to execute goal [32morg.apache.maven.plugins:maven-surefire-plugin:3.1.2:test[m [1m(default-test)[m on project [36mimageproc[m: [1;31mThere are test failures.[m
+[[1;31mERROR[m] [1;31m[m
+[[1;31mERROR[m] [1;31mPlease refer to /home/lhuihong/projects/imageproc/backend/target/surefire-reports for the individual test results.[m
+[[1;31mERROR[m] [1;31mPlease refer to dump files (if any exist) [date].dump, [date]-jvmRun[N].dump and [date].dumpstream.[m
+[[1;31mERROR[m] -> [1m[Help 1][m
+[[1;31mERROR[m] 
+[[1;31mERROR[m] To see the full stack trace of the errors, re-run Maven with the [1m-e[m switch.
+[[1;31mERROR[m] Re-run Maven using the [1m-X[m switch to enable full debug logging.
+[[1;31mERROR[m] 
+[[1;31mERROR[m] For more information about the errors and possible solutions, please read the following articles:
+[[1;31mERROR[m] [1m[Help 1][m http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
