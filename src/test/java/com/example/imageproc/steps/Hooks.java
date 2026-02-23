@@ -1,7 +1,5 @@
 package com.example.imageproc.steps;
 
-import io.cucumber.java.Before;
-import io.restassured.RestAssured;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.web.client.TestRestTemplate;
 import org.springframework.boot.test.web.server.LocalServerPort;
@@ -9,7 +7,12 @@ import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.MediaType;
 
-import static io.restassured.RestAssured.*;
+import com.example.imageproc.repository.UserRepository;
+
+import io.cucumber.java.After;
+import io.cucumber.java.Before;
+import io.restassured.RestAssured;
+import static io.restassured.RestAssured.baseURI;
 
 public class Hooks {
 
@@ -18,6 +21,9 @@ public class Hooks {
 
     @Autowired
     private TestRestTemplate restTemplate;
+
+    @Autowired
+    private UserRepository userRepository;
 
     @Before(order = 0)
     public void setupRestAssured() {
@@ -47,5 +53,11 @@ public class Hooks {
         } catch (Exception e) {
             // User might already exist, ignore
         }
+    }
+
+    @After(order = 1)
+    public void cleanupDatabase() {
+        // Clear user data after each scenario to ensure clean state
+        userRepository.deleteAll();
     }
 }
