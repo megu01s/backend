@@ -123,7 +123,6 @@
             <scope>test</scope>
         </dependency>
 
-        <!-- RestAssured -->
         <dependency>
             <groupId>io.rest-assured</groupId>
             <artifactId>rest-assured</artifactId>

@@ -8,19 +8,19 @@ Feature: User Authentication
   # -------------------------------
   Scenario: Successfully sign up a new user
     Given a sign-up request with username "newuser" and password "StrongPass123"
-    When I POST to "/api/auth/signup"
+    When I POST JSON to "/api/auth/signup"
     Then the response status should be 201
     And the response should contain a message "User created successfully"
 
   Scenario: Reject sign-up with an existing username
     Given a sign-up request with username "existingUser" and password "Password123"
-    When I POST to "/api/auth/signup"
+    When I POST JSON to "/api/auth/signup"
     Then the response status should be 409
     And the response should contain a message "Username already exists"
 
   Scenario: Reject sign-up with invalid password format
     Given a sign-up request with username "user123" and password "short"
-    When I POST to "/api/auth/signup"
+    When I POST JSON to "/api/auth/signup"
     Then the response status should be 400
     And the response should contain a validation error
 
@@ -29,13 +29,13 @@ Feature: User Authentication
   # -------------------------------
   Scenario: Successfully log in and receive JWT token
     Given a valid login request with username "existingUser" and password "Password123"
-    When I POST to "/api/auth/login"
+    When I POST JSON to "/api/auth/login"
     Then the response status should be 200
     And the response should contain a JWT token
 
   Scenario: Reject login with invalid credentials
     Given a login request with username "existingUser" and password "wrongPassword"
-    When I POST to "/api/auth/login"
+    When I POST JSON to "/api/auth/login"
     Then the response status should be 401
     And the response should contain an authentication error
 
@@ -58,3 +58,27 @@ Feature: User Authentication
     When I GET "/api/images/list" with the token
     Then the response status should be 401
     And the response should contain an authentication error
+
+# -- Sign-up validations supplémentaires
+Scenario: Reject sign-up with missing username
+  Given a sign-up request with username "" and password "Password123"
+  When I POST JSON to "/api/auth/signup"
+  Then the response status should be 400
+  And the response should contain a validation error
+
+Scenario: Reject sign-up with missing password
+  Given a sign-up request with username "user_no_pwd" and password ""
+  When I POST JSON to "/api/auth/signup"
+  Then the response status should be 400
+  And the response should contain a validation error
+
+# -- Login supplémentaires
+Scenario: Reject login with unknown user
+  Given a login request with username "not_exist_user" and password "whatever"
+  When I POST JSON to "/api/auth/login"
+  Then the response status should be 401
+  And the response should contain an authentication error
+
+Scenario: Reject login without body
+  When I POST JSON with empty body to "/api/auth/login"
+  Then the response status should be 400

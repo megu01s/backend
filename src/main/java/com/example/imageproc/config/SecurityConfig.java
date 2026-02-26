@@ -1,7 +1,9 @@
 package com.example.imageproc.config;
 
+import org.springframework.boot.web.servlet.FilterRegistrationBean;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.core.Ordered;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.AuthenticationProvider;
 import org.springframework.security.authentication.dao.DaoAuthenticationProvider;
@@ -15,6 +17,8 @@ import org.springframework.security.web.AuthenticationEntryPoint;
 import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.security.web.access.AccessDeniedHandler;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
+import org.springframework.web.multipart.MultipartResolver;
+import org.springframework.web.multipart.support.MultipartFilter;
 
 import com.example.imageproc.security.jwt.JwtAuthenticationFilter;
 
@@ -48,6 +52,30 @@ public class SecurityConfig {
                 .addFilterBefore(jwtAuthenticationFilter, UsernamePasswordAuthenticationFilter.class);
 
         return http.build();
+    }
+
+    /**
+     * Register MultipartFilter to run BEFORE the JWT authentication filter.
+     * This ensures multipart requests are parsed before authentication,
+     * allowing proper 400 errors for missing file parameters instead of 401.
+     */
+    @Bean
+    public FilterRegistrationBean<MultipartFilter> multipartFilterRegistration() {
+        FilterRegistrationBean<MultipartFilter> registration = new FilterRegistrationBean<>();
+        registration.setFilter(new MultipartFilter());
+        registration.addUrlPatterns("/*");
+        registration.setOrder(Ordered.HIGHEST_PRECEDENCE);
+        registration.setName("multipartFilter");
+        return registration;
+    }
+
+    /**
+     * Configure multipart resolver to handle multipart requests properly.
+     */
+    @Bean
+    public MultipartResolver multipartResolver() {
+        org.springframework.web.multipart.support.StandardServletMultipartResolver resolver = new org.springframework.web.multipart.support.StandardServletMultipartResolver();
+        return resolver;
     }
 
     @Bean
